@@ -1,0 +1,244 @@
+
+
+.card {
+  border-radius: 10px;
+}
+
+.story img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.header {
+  width: 100%;
+  z-index: 1000; /* Ensures the header is above other content */
+}
+
+.header .nav {
+  display: flex;
+  gap: 10px; /* Adjust spacing between nav items */
+}
+
+.header .logo {
+  margin-right: 20px; /* Space between logo and search bar */
+}
+
+
+.story img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.form-control {
+  border-radius: 5px;
+}
+
+.container {
+  margin-top: 20px;
+}
+/* src/App.css or your component-specific CSS file */
+.stories-container {
+  padding: 10px;
+}
+
+.stories-wrapper {
+  display: flex;
+  overflow-x: auto; /* Allows horizontal scrolling */
+  padding: 10px 0; /* Add vertical padding */
+}
+
+.story {
+  width: 80px; /* Set a fixed width for each story */
+  height: 120px; /* Set a fixed height for each story */
+  margin-right: 10px; /* Space between stories */
+  position: relative; /* Required for absolute positioning of label */
+  overflow: hidden; /* Ensures that overflow is hidden */
+ 
+  background-color: transparent; /* Fully transparent background */
+}
+
+.story-media {
+  width: 100%; /* Full width of the story container */
+  height: 100%; /* Full height of the story container */
+  object-fit: cover; /* Ensures the media fits nicely */
+  border-radius: 10px; /* Optional: curve the corners */
+}
+
+.add-story {
+  display: flex;
+  flex-direction: column; /* Align items vertically */
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgba(170, 170, 170, 0.5); /* Light transparent border */
+  border-radius: 10px; /* Curved corners for the add story button */
+  width: 80px;
+  height: 120px;
+  margin-right: 10px; /* Space between stories */
+  position: relative; /* Required for absolute positioning */
+  background-color: transparent; /* Fully transparent background */
+}
+
+.add-story-label {
+  font-size: 36px; /* Larger font for the "+" sign */
+}
+
+.add-story-text {
+  font-size: 12px; /* Smaller font for "Add Story" text */
+  color: rgb(210, 210, 210); /* White color for the text */
+  text-align: center; /* Center text */
+  margin-top: 0px; /* Space between "+" and text */
+} 
+
+/* Add this to your CSS file */
+
+.fixed-height {
+  height: 400px; /* Set desired height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* App.css or your specific CSS file */
+.overflow-scroll {
+  max-height: calc(100vh - 20px);
+  overflow-y: auto; /* Enables vertical scrolling */
+}
+
+/* Hide scrollbar for WebKit browsers */
+.overflow-scroll::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar */
+}
+
+/* For Firefox */
+.overflow-scroll {
+  scrollbar-width: none; /* Hides scrollbar in Firefox */
+}
+
+/* Add this to your CSS file, e.g., App.css or a specific stylesheet for your component */
+
+/* src/App.css or src/components/ProfileSection.css */
+.profile-background {
+  background: rgba(71, 71, 71, 0.7); /* Semi-transparent gray */
+  padding: 20px; /* Add some padding to the section */
+  border-radius: 8px; /* Optional: Rounded corners */
+  height: 430px; /* Fixed height */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: Add a light border for better definition */
+}
+
+/* src/App.css or src/components/Home.css */
+
+.fixed-column {
+  height: calc(100vh - 60px); /* Adjust for header height, if any */
+  overflow: hidden; /* Prevent scrolling */
+}
+
+.scrollable-column {
+  height: calc(100vh - 60px); /* Adjust for header height, if any */
+  overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.scrollable-column::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  background: transparent; /* Optional: hide background */
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-column {
+  scrollbar-width: none; /* Hide scrollbar */
+}
+
+/* src/App.css or src/components/Post.css */
+
+.post-card {
+  height: 400px; /* Set a fixed height for the post */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribute space between content */
+  overflow: hidden; /* Hide overflow to maintain the fixed height */
+}
+
+.post-media {
+  flex: 1; /* Allow the image to grow and take up available space */
+  display: flex;
+  justify-content: center; /* Center the image */
+  align-items: center; /* Center the image */
+}
+
+.post-media img {
+  max-height: 60%; /* Keep the image within the fixed height */
+  max-width: 100%; /* Maintain the aspect ratio */
+  object-fit: cover; /* Cover the area without stretching */
+}
+
+.post-description {
+  height: 60px; /* Fixed height for the description */
+  overflow: hidden; /* Hide overflow */
+}
+.button-container {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  margin-top: 10px; /* Optional: add some space above the buttons */
+}
+
+.chat-message {
+  margin: 5px 0;
+}
+
+.text-end {
+  text-align: right;
+}
+
+.chat-window {
+  background-color: #f8f9fa; /* Light gray background for chat */
+  border-radius: 5px;
+  padding: 10px;
+  height: 300px; /* Adjust height as needed */
+}
+
+.list-group-item {
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item img {
+  border-radius: 50%; /* Ensures the image is circular */
+}
+
+/* src/pages/Messages.css */
+
+.message-list {
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Set maximum height for the column */
+  position: relative; /* Required for the scrollbar visibility */
+}
+
+/* Hide scrollbar by default */
+.message-list::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar width */
+  background: transparent; /* Transparent background */
+}
+
+/* Show scrollbar when hovering */
+.message-list:hover::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+/* Style the scrollbar track */
+.message-list::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1); /* Track color */
+}
+
+/* Style the scrollbar handle */
+.message-list::-webkit-scrollbar-thumb {
+  background: rgba(71, 71, 71, 0.5); /* Handle color */
+  border-radius: 10px; /* Round corners of the handle */
+}
+
+
+
